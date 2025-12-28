@@ -135,11 +135,21 @@ fieldset {
 }
 
 .field > input {
-    /* appearance: none; */
     border-radius: 3px;
     border: 1px solid grey;
     padding: 5px;
     width: 200px;
+    outline: none;
+}
+
+.field > input:invalid {
+    border-color: #ff7f7f;
+    box-shadow: 0 0 5px rgba(255, 127, 127, 0.5);
+}
+
+.field > input:focus {
+    border-color: rgb(77, 77, 225);
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.5);
 }
 
 /* Button Panel */
@@ -147,7 +157,24 @@ fieldset {
     padding-left: var(--padding-left);
 }
 
+/* Button */
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 /* Login Panel */
 .login-panel {
     padding-left: var(--padding-left);
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
 }
