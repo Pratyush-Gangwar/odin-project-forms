@@ -36,14 +36,14 @@ body {
     height: 100%;
 }
 
+/* Overlay */
 .sidebar {
     position: relative;
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
-    top: 25%;
+    top: 21%;
 
     display: flex;
     justify-content: center;
@@ -61,4 +61,24 @@ body {
 .overlay > img {
     width: 20%;
     height: 20%;
+}
+
+/* Form Panel */
+.form-panel {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* Fields */
+fieldset {
+    display: flex;
+    gap: 100px;
+    border: none;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
